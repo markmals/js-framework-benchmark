@@ -1,0 +1,35 @@
+{
+    "name": "js-framework-benchmark-angular-signals-jsx",
+    "version": "0.2.0",
+    "main": "dist/main.js",
+    "js-framework-benchmark": {
+        "frameworkVersionFromPackage": "angular-signals-jsx",
+        "frameworkHomeURL": "https://github.com/markmals/angular-signals-jsx"
+    },
+    "scripts": {
+        "build-dev": "rollup -c -w",
+        "build-prod": "rollup -c --environment production"
+    },
+    "author": "Mark Malstrom",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/krausest/js-framework-benchmark",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/krausest/js-framework-benchmark.git"
+    },
+    "dependencies": {
+        "@angular/core": "16.0.0-next.4",
+        "angular-signals-jsx": "0.1.1",
+        "rxjs": "7.8.0"
+    },
+    "devDependencies": {
+        "@babel/core": "7.11.6",
+        "@rollup/plugin-babel": "5.2.1",
+        "@rollup/plugin-node-resolve": "11.2.0",
+        "@rollup/plugin-replace": "2.3.2",
+        "@rollup/plugin-typescript": "^11.1.0",
+        "babel-plugin-jsx-dom-expressions": "^0.34.0",
+        "rollup": "2.41.4",
+        "rollup-plugin-terser": "7.0.2"
+    }
+}
