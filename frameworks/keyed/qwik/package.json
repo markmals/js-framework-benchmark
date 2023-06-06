@@ -1,0 +1,33 @@
+{
+    "name": "qwik-app",
+    "version": "0.0.1",
+    "description": "Classic Todo MVC app",
+    "main": "dist/main.js",
+    "js-framework-benchmark": {
+        "frameworkVersionFromPackage": "@builder.io/qwik",
+        "frameworkHomeURL": "https://qwik.builder.io/"
+    },
+    "scripts": {
+        "build-dev": "rollup -c -w",
+        "build-prod": "rollup -c --environment production"
+    },
+    "devDependencies": {
+        "@builder.io/qwik": "^1.1.2",
+        "@rollup/plugin-commonjs": "^24.0.1",
+        "@rollup/plugin-json": "^6.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-terser": "^0.4.0",
+        "@rollup/plugin-typescript": "^11.0.0",
+        "@types/service-worker-mock": "^2.0.1",
+        "concurrently": "^8.0.1",
+        "rimraf": "^4.4.1",
+        "rollup": "^3.20.2",
+        "typescript": "^5.0.3",
+        "wait-on": "^7.0.1"
+    },
+    "author": "Builder.io Team",
+    "license": "MIT",
+    "engines": {
+        "node": ">=14.14.0"
+    }
+}
